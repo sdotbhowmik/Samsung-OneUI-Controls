@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">One UI Controls</string>
+    <string name="tile_label">Controls</string>
+    <string name="accessibility_label">One UI Controls volume keys</string>
+    <string name="accessibility_description">Shows the One UI style control panel when you press the volume keys. Disable this to return to the normal Samsung volume panel.</string>
+    <string name="shade_channel_name">Control card</string>
+    <string name="shade_channel_description">Show volume and media controls in the notification shade</string>
+    <string name="notification_card_title">Volume &amp; media</string>
+    <string name="no_media">No media playing</string>
+    <string name="open_controls">Open controls</string>
+</resources>

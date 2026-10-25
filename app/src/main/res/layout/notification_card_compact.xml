@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shade_card"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="14dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/art"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_art"
+        android:contentDescription="@string/notification_card_title"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_music"
+        android:tint="#FF9B9BA1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/notification_card_title"
+            android:textColor="#FFF2F2F4"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/no_media"
+            android:textColor="#FF9B9BA1"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vol_pct"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="#FFF2F2F4"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/vol_down"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:padding="8dp"
+        android:contentDescription="Volume down"
+        android:src="@drawable/ic_volume_down"
+        android:tint="#FFF2F2F4" />
+
+    <ImageView
+        android:id="@+id/vol_up"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:padding="8dp"
+        android:contentDescription="Volume up"
+        android:src="@drawable/ic_volume_up"
+        android:tint="#FFF2F2F4" />
+</LinearLayout>
